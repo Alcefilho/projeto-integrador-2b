@@ -1,4 +1,3 @@
-# app.py
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -18,7 +17,6 @@ import plotly.graph_objects as go
 from PIL import Image
 import io
 
-# Configurando a página
 st.set_page_config(
     page_title="Sistema de Triagem de Sintomas",
     page_icon="🏥",
@@ -26,7 +24,6 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Título e descrição
 st.title("🏥 Sistema de Triagem de Sintomas")
 st.markdown("""
 Este sistema utiliza inteligência artificial para realizar uma triagem inicial de sintomas,
@@ -35,7 +32,6 @@ auxiliando na identificação de possíveis condições de saúde com base em um
 **IMPORTANTE**: Este sistema é apenas educacional e não substitui a avaliação médica profissional.
 """)
 
-# Função para gerar dados de pacientes clinicamente mais realistas
 @st.cache_data
 def gerar_dados_pacientes(n=2000, seed=42):
     # Configurando o Faker para gerar dados realistas
