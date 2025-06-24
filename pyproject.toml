@@ -1,8 +1,11 @@
 [project]
 name = "projeto-integrador-ii-b"
 version = "0.1.0"
-description = "Add your description here"
+description = "Sistema de triagem de sintomas utilizando inteligência artificial para apoio inicial à identificação de condições clínicas, desenvolvido como parte do Projeto Integrador II-B da PUC Goiás."
 readme = "README.md"
+authors = [
+    { name = "Alcebiades Filho", email = "alcebiadesabf@hotmail.com" }
+]
 requires-python = ">=3.12"
 dependencies = [
     "faker>=37.4.0",
